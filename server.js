@@ -42,6 +42,5 @@ if (process.env.NODE_ENV === 'production') {
     });
 }
 
-process.on('SIGINT', () => { console.log("good bye!"); process.exit(); })
 const port = process.env.PORT || 5000;
 app.listen (port,()=> console.log(`server running on port ${port}`));   
